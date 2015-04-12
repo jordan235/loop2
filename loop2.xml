@@ -7,7 +7,7 @@
     </value>
     <statement name="DO">
       <block type="led_select" id="29" inline="true">
-        <field name="ACTION">ON</field>
+        <field name="ACTION">OFF</field>
         <value name="LED">
           <block type="math_number" id="36">
             <field name="NUM">0</field>
@@ -15,7 +15,7 @@
         </value>
         <next>
           <block type="led_select" id="44" inline="true">
-            <field name="ACTION">ON</field>
+            <field name="ACTION">OFF</field>
             <value name="LED">
               <block type="math_number" id="45">
                 <field name="NUM">5</field>
@@ -32,7 +32,7 @@
                     </value>
                     <next>
                       <block type="led_select" id="46" inline="true">
-                        <field name="ACTION">ON</field>
+                        <field name="ACTION">OFF</field>
                         <value name="LED">
                           <block type="math_number" id="107">
                             <field name="NUM">1</field>
