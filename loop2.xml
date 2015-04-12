@@ -62,13 +62,41 @@
       </block>
     </statement>
     <next>
-      <block type="oled_drawtext" id="156">
-        <field name="TEXT">greetings</field>
+      <block type="oled_setcursor" id="172" inline="true">
+        <value name="STARTX">
+          <block type="math_number" id="182">
+            <field name="NUM">10</field>
+          </block>
+        </value>
+        <value name="STARTY">
+          <block type="math_number" id="189">
+            <field name="NUM">10</field>
+          </block>
+        </value>
         <next>
-          <block type="oled_drawtext" id="157">
-            <field name="TEXT">i am a robot</field>
+          <block type="oled_drawtext" id="156">
+            <field name="TEXT">greetings</field>
             <next>
-              <block type="movement_stop" id="137"></block>
+              <block type="oled_setcursor" id="175" inline="true">
+                <value name="STARTX">
+                  <block type="math_number" id="196">
+                    <field name="NUM">10</field>
+                  </block>
+                </value>
+                <value name="STARTY">
+                  <block type="math_number" id="204">
+                    <field name="NUM">20</field>
+                  </block>
+                </value>
+                <next>
+                  <block type="oled_drawtext" id="157">
+                    <field name="TEXT">i am a robot</field>
+                    <next>
+                      <block type="movement_stop" id="137"></block>
+                    </next>
+                  </block>
+                </next>
+              </block>
             </next>
           </block>
         </next>
