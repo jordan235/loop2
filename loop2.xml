@@ -62,7 +62,17 @@
       </block>
     </statement>
     <next>
-      <block type="movement_stop" id="137"></block>
+      <block type="oled_drawtext" id="156">
+        <field name="TEXT">greetings</field>
+        <next>
+          <block type="oled_drawtext" id="157">
+            <field name="TEXT">i am a robot</field>
+            <next>
+              <block type="movement_stop" id="137"></block>
+            </next>
+          </block>
+        </next>
+      </block>
     </next>
   </block>
 </xml>
